@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore North Sumatra — Pesona Alam Sumatera Utara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">North<em>Sumatra</em></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#destinations">Destinasi</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <button class="nav-cta">Jelajahi Sekarang</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#destinations">Destinasi</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#gallery">Galeri</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/danau_toba.jpg" alt="Danau Toba" class="hero-img active" data-index="0" />
+      <img src="images/gunung_sinabung.jpg" alt="Gunung Sinabung" class="hero-img" data-index="1" />
+      <img src="images/gunung_sibayak.jpg" alt="Gunung Sibayak" class="hero-img" data-index="2" />
+      <img src="images/lau_kawar.jpg" alt="Lau Kawar" class="hero-img" data-index="3" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Selamat Datang di</p>
+      <h1 class="hero-title">
+        Sumatera<br /><em>Utara</em>
+      </h1>
+      <p class="hero-sub">Negeri pegunungan megah, danau purba, dan hutan tropis yang tak tertandingi.</p>
+      <div class="hero-actions">
+        <a href="#destinations" class="btn-primary">Lihat Destinasi</a>
+        <a href="#gallery" class="btn-ghost">Galeri Foto</a>
+      </div>
+    </div>
+    <div class="hero-slides">
+      <button class="slide-dot active" data-slide="0"></button>
+      <button class="slide-dot" data-slide="1"></button>
+      <button class="slide-dot" data-slide="2"></button>
+      <button class="slide-dot" data-slide="3"></button>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- STATS BAND -->
+  <section class="stats-band">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-number">4</span>
+        <span class="stat-label">Destinasi Unggulan</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">1.707m</span>
+        <span class="stat-label">Ketinggian Sibayak</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">1.145 km²</span>
+        <span class="stat-label">Luas Danau Toba</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">2.460m</span>
+        <span class="stat-label">Puncak Sinabung</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <p class="section-eyebrow">Tentang Sumatera Utara</p>
+        <h2 class="section-title">Alam yang Tak Pernah Berhenti<br /><em>Memukau</em></h2>
+        <p class="about-desc">
+          Sumatera Utara adalah surga tersembunyi di ujung barat nusantara — dengan hamparan pegunungan vulkanik yang dramatis, danau terbesar di Asia Tenggara, dan hutan tropis yang kaya akan keanekaragaman hayati. Setiap sudut menyimpan cerita alam jutaan tahun yang siap dijelajahi.
+        </p>
+        <p class="about-desc">
+          Dari puncak kawah Gunung Sibayak yang berasap hingga tepian Danau Toba yang sunyi dan biru, Sumatera Utara menawarkan pengalaman alam yang tak akan mudah terlupakan.
+        </p>
+        <a href="#destinations" class="btn-primary">Mulai Jelajah</a>
+      </div>
+      <div class="about-visual">
+        <div class="about-card">
+          <img src="images/lau_kawar.jpg" alt="Lau Kawar" />
+          <div class="about-card-badge">Alam Terbaik</div>
+        </div>
+        <div class="about-floating-tag">
+          <span class="tag-icon">🌿</span>
+          <span>Ekosistem Tropis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="destinations" id="destinations">
+    <div class="dest-header">
+      <p class="section-eyebrow">Destinasi Unggulan</p>
+      <h2 class="section-title">Tempat-Tempat yang<br /><em>Wajib Dikunjungi</em></h2>
+    </div>
+    <div class="dest-grid" id="destGrid">
+      <!-- Cards injected by JS -->
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-header">
+      <p class="section-eyebrow">Galeri Foto</p>
+      <h2 class="section-title">Keindahan dalam<br /><em>Setiap Bingkai</em></h2>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Cards injected by JS -->
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev">‹</button>
+    <button class="lightbox-next" id="lightboxNext">›</button>
+    <div class="lightbox-img-wrap">
+      <img id="lightboxImg" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <h2>Siap Merasakan<br /><em>Keajaiban Alam?</em></h2>
+      <p>Rencanakan perjalananmu sekarang dan temukan keajaiban tersembunyi Sumatera Utara bersama kami.</p>
+      <a href="#contact" class="btn-primary">Hubungi Kami</a>
+    </div>
+    <div class="cta-decor"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <p class="section-eyebrow">Hubungi Kami</p>
+        <h2 class="section-title">Rencanakan<br /><em>Petualanganmu</em></h2>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Lokasi</strong>
+              <p>Medan, Sumatera Utara, Indonesia</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Telepon</strong>
+              <p>+62 858 3039 5032</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p>info@northsumatratour.id</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="fname">Nama Lengkap</label>
+          <input type="text" id="fname" placeholder="Masukkan nama Anda" required />
+        </div>
+        <div class="form-group">
+          <label for="femail">Email</label>
+          <input type="email" id="femail" placeholder="email@contoh.com" required />
+        </div>
+        <div class="form-group">
+          <label for="fdestination">Destinasi Minat</label>
+          <select id="fdestination">
+            <option value="">-- Pilih Destinasi --</option>
+            <option value="toba">Danau Toba</option>
+            <option value="sibayak">Gunung Sibayak</option>
+            <option value="sinabung">Gunung Sinabung</option>
+            <option value="laukawar">Lau Kawar</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="fmessage">Pesan</label>
+          <textarea id="fmessage" rows="4" placeholder="Ceritakan rencana perjalananmu..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">Kirim Pesan</button>
+        <div class="form-success" id="formSuccess">✓ Pesan berhasil dikirim! Kami akan segera menghubungi Anda.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">North<em>Sumatra</em></span>
+        <p>Menjelajahi keajaiban alam Sumatera Utara bersama Anda.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#destinations">Destinasi</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Destinasi</h4>
+        <ul>
+          <li><a href="#destinations">Danau Toba</a></li>
+          <li><a href="#destinations">Gunung Sibayak</a></li>
+          <li><a href="#destinations">Gunung Sinabung</a></li>
+          <li><a href="#destinations">Lau Kawar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 NorthSumatra Tourism. Dibuat dengan ❤️ untuk keindahan alam nusantara.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
